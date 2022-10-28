@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { DndList } from './DndList';
+import DndList from './DndList';
 
 export default function Home() {
     const data = [
