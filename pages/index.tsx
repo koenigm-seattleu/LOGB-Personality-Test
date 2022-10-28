@@ -1,38 +1,36 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import { DndList } from './DndList'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import { DndList } from './DndList';
 
 export default function Home() {
     const data = [
         {
-            description: "Likes authority",
-            category: "L"
+            description: 'Likes authority',
+            category: 'L',
         },
         {
-            description: "Enthusiastic",
-            category: "O"
+            description: 'Enthusiastic',
+            category: 'O',
         },
         {
-            description: "Sensitive feelings",
-            category: "G"
+            description: 'Sensitive feelings',
+            category: 'G',
         },
         {
-            description: "Likes instructions",
-            category: "B"
+            description: 'Likes instructions',
+            category: 'B',
         },
-    ]
+    ];
     return (
         <div className={styles.container}>
             <Head>
                 <title>LOGB Personality Test</title>
-                <meta name="description" content="5-minute personality test" />
-                <link rel="icon" href="/favicon.ico" />
+                <meta name='description' content='5-minute personality test' />
+                <link rel='icon' href='/favicon.ico' />
             </Head>
 
             <main className={styles.main}>
-                <h1 className={styles.title}>
-                    LOGB Personality test
-                </h1>
+                <h1 className={styles.title}>LOGB Personality test</h1>
 
                 <DndList data={data} />
             </main>
@@ -50,5 +48,5 @@ export default function Home() {
             {/*     </a> */}
             {/* </footer> */}
         </div>
-    )
+    );
 }

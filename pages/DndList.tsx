@@ -9,10 +9,14 @@ const useStyles = createStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         borderRadius: theme.radius.md,
-        border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
-            }`,
+        border: `1px solid ${
+            theme.colorScheme === 'dark'
+                ? theme.colors.dark[5]
+                : theme.colors.gray[2]
+        }`,
         padding: `${theme.spacing.sm}px ${theme.spacing.xl}px`,
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.white,
+        backgroundColor:
+            theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.white,
         marginBottom: theme.spacing.sm,
     },
 
@@ -40,16 +44,22 @@ export function DndList({ data }: DndListProps) {
     const [isBrowser, setIsBrowser] = useState(false);
 
     useEffect(() => {
-        if (typeof window !== "undefined") {
+        if (typeof window !== 'undefined') {
             setIsBrowser(true);
         }
-    }, [])
+    }, []);
 
     const items = state.map((item, index) => (
-        <Draggable key={item.category} index={index} draggableId={item.category}>
+        <Draggable
+            key={item.category}
+            index={index}
+            draggableId={item.category}
+        >
             {(provided, snapshot) => (
                 <div
-                    className={cx(classes.item, { [classes.itemDragging]: snapshot.isDragging })}
+                    className={cx(classes.item, {
+                        [classes.itemDragging]: snapshot.isDragging,
+                    })}
                     {...provided.draggableProps}
                     {...provided.dragHandleProps}
                     ref={provided.innerRef}
@@ -64,27 +74,27 @@ export function DndList({ data }: DndListProps) {
     ));
 
     return (
-
         <DragDropContext
-            onDragEnd={
-                ({ destination, source }) =>
-                    handlers.reorder({
-                        from: source.index, to: destination?.index || 0
-                    })
+            onDragEnd={({ destination, source }) =>
+                handlers.reorder({
+                    from: source.index,
+                    to: destination?.index || 0,
+                })
             }
         >
-            {isBrowser ?
-                <Droppable droppableId="dnd-list" direction="vertical">
+            {isBrowser ? (
+                <Droppable droppableId='dnd-list' direction='vertical'>
                     {(provided) => (
-                        <div {...provided.droppableProps} ref={provided.innerRef}>
+                        <div
+                            {...provided.droppableProps}
+                            ref={provided.innerRef}
+                        >
                             {items}
                             {provided.placeholder}
                         </div>
                     )}
                 </Droppable>
-                : null
-
-            }
-        </DragDropContext >
+            ) : null}
+        </DragDropContext>
     );
 }
