@@ -38,7 +38,7 @@ interface DndListProps {
     }[];
 }
 
-export function DndList({ data }: DndListProps) {
+export default function DndList({ data }: DndListProps) {
     const { classes, cx } = useStyles();
     const [state, handlers] = useListState(data);
     const [isBrowser, setIsBrowser] = useState(false);
