@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Footer() {
@@ -5,9 +6,9 @@ export default function Footer() {
         <div className={styles.footerContainer}>
             <footer className={styles.footer}>
                 <div className={styles.footerTitleContainer}>
-                    <a href="/">
+                    <Link href="/">
                         <h2>LOGB Personality Test</h2>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className={styles.footerRightContent}>
