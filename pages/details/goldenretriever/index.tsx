@@ -1,72 +1,55 @@
 import styles from '../../../styles/Home.module.css';
 
-export default function Lion() {
+export default function GoldenRetriever() {
     return (
         <div className={styles.container}>
             <main className={styles.description}>
-                <h1 className={styles.title}>Lions</h1>
+                <h1 className={styles.title}>Golden Retrievers</h1>
                 <p>
-                    Lions are leaders. They are usually the bosses at
-                    work&#8230; or at least they think they are! They are
-                    decisive, bottom line folks who are observers, not watchers
-                    or listeners. They love to solve problems. They are usually
-                    individualists who love to seek new adventures and
-                    opportunities.
-                </p>
-
-                <p>
-                    Lions are very confident and self-reliant. In a group
-                    setting, if no one else instantly takes charge, the Lion
-                    will. Unfortunately, if they don’t learn how to tone down
-                    their aggressiveness, their natural dominating traits can
-                    cause problems with others. Most entrepreneurs are strong
-                    lions, or at least have a lot of lion in them.
+                    One word describes these people: LOYAL. They’re so loyal, in
+                    fact, that they can absorb the most emotional pain and
+                    punishment in a relationship and still stay committed. They
+                    are great listeners, incredibly empathetic and warm
+                    encouragers. However, they tend to be such pleasers that
+                    they can have great difficulty being assertive in a
+                    situation or relationship when it’s needed.
                 </p>
 
                 <div className={styles.descriptionColumnsContainer}>
                     <div className={styles.descriptionList}>
                         <h2>Natural strengths</h2>
                         <ul>
-                            <li>Decisive</li>
-                            <li>Goal-oriented</li>
-                            <li>Achievement driven</li>
-                            <li>Gets results</li>
-                            <li>Independent</li>
-                            <li>Risk-taker</li>
-                            <li>Takes charge</li>
-                            <li>Takes initiative</li>
-                            <li>Self-starter</li>
-                            <li>Persistent</li>
-                            <li>Efficient</li>
-                            <li>Competitive</li>
-                            <li>Enjoys challenges, variety, and change</li>
-                            <li>
-                                Driven to complete projects quickly and
-                                effectively
-                            </li>
+                            <li>Patient</li>
+                            <li>Easy-going</li>
+                            <li>Team player</li>
+                            <li>Stable</li>
+                            <li>Empathetic</li>
+                            <li>Compassionate</li>
+                            <li>Sensitive to feelings of others</li>
+                            <li>Tremendously loyal</li>
+                            <li>Puts people above projects</li>
+                            <li>Dependable</li>
+                            <li>Reliable</li>
+                            <li>Supportive</li>
+                            <li>Agreeable</li>
                         </ul>
                     </div>
 
                     <div className={styles.descriptionList}>
                         <h2>Natural Weaknesses</h2>
                         <ul>
-                            <li>Impatient</li>
-                            <li>Bluent</li>
-                            <li>Poor listener</li>
-                            <li>Impulsive</li>
-                            <li>Demanding</li>
+                            <li>Indecisive</li>
+                            <li>Over-accommodating</li>
                             <li>
-                                May view projects as more important than people
+                                May sacrifice results for the sake of harmony
                             </li>
+                            <li>Slow to initiate</li>
+                            <li>Avoids confrontation even when needed</li>
                             <li>
-                                Can be insensitive to the feelings of others
+                                Tends to hold grudges and remember hurts
+                                inflicted by others
                             </li>
-                            <li>
-                                May "run over" others who are slower to act or
-                                speak
-                            </li>
-                            <li>Fears inactivity, relaxation</li>
-                            <li>Quickly bored by routine or mechanics</li>
+                            <li>Fears change</li>
                         </ul>
                     </div>
                 </div>
@@ -76,7 +59,7 @@ export default function Lion() {
                         Basic disposition
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Fast-paced, task oriented
+                        Slow-paced, people-oriented
                     </p>
                 </div>
 
@@ -85,8 +68,7 @@ export default function Lion() {
                         Motivated by
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Results; challenge, action, power, and credit for
-                        achievement
+                        Desire for good relationships and appreciation of others
                     </p>
                 </div>
 
@@ -95,9 +77,8 @@ export default function Lion() {
                         Time Management
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Lions focus on NOW instead of distant future. They get a
-                        lot more done in a lot less time than their peers. Hate
-                        wasting time; and like to get right to the point.
+                        Golden Retrievers focus on the present and devote lots
+                        of time to helping others and building relationships
                     </p>
                 </div>
 
@@ -106,8 +87,8 @@ export default function Lion() {
                         Communication Style
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Great at initiating communication; not good at listening
-                        (one way communicator)
+                        Two-way communicator; great listener and provides
+                        empathetic response
                     </p>
                 </div>
 
@@ -116,9 +97,8 @@ export default function Lion() {
                         Decision Making
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Impulsive; makes quick decisions with goal or end result
-                        in mind. Results-focused. Needs very few facts to make a
-                        decision.
+                        Makes decisions more slowly, wants input from others,
+                        and often yields to the input
                     </p>
                 </div>
 
@@ -127,7 +107,8 @@ export default function Lion() {
                         In Pressure or Tense Situations
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        The lion takes command and becomes autocratic.
+                        The Golden Retriever gives in to the opinions, ideas,
+                        and wishes of others. Often too tolerant
                     </p>
                 </div>
 
@@ -136,19 +117,19 @@ export default function Lion() {
                         Greatest Needs
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        The lion needs to see results, experience variety, and
-                        face new challenges. He needs to solve problems and
-                        wants direct answers.
+                        The Golden Retriever needs security; gradual change and
+                        time to adjust to it; an environment free of conflict
                     </p>
                 </div>
 
                 <div className={styles.descriptionColumnsContainer}>
                     <h3 className={styles.descriptionLeftHeader}>
-                        What the Lion Desires
+                        What the Golden Retriever Desires
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Freedom, authority, variety, difficult assignments,
-                        opportunity for advancement.
+                        Quality relationships; security; consistent known
+                        environment; a relaxed and friendly environment; freedom
+                        to work at own pace
                     </p>
                 </div>
             </main>
