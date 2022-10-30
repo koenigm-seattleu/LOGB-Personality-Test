@@ -231,14 +231,13 @@ export default function Home() {
                 </Head>
 
                 <main className={styles.main}>
-                    <FadeIn className={styles.main} delay={20}>
+                    <FadeIn delay={20}>
                         <h1 className={styles.title}>LOGB Personality test</h1>
+                        <div className={styles.dndContainer}>
+                            <FadeIn delay={100}>{questions}</FadeIn>
 
-                        <FadeIn delay={100} className={styles.dndContainer}>
-                            {questions}
-                        </FadeIn>
-
-                        <Scores scores={scores} />
+                            <Scores scores={scores} />
+                        </div>
                     </FadeIn>
                 </main>
             </div>

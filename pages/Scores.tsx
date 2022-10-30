@@ -43,7 +43,7 @@ export default function Scores({ scores }: ScoresProps) {
     }, [scores]);
 
     return (
-        <div className={styles.container}>
+        <div className={styles.scoresContainer}>
             <h1 className={styles.title}>Scores</h1>
 
             <ScoreGraph data={scoreSum} />

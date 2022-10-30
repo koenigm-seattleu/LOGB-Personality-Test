@@ -13,6 +13,7 @@ const useStyles = createStyles((theme) => ({
         padding: `${theme.spacing.sm}px ${theme.spacing.xl}px`,
         backgroundColor: theme.white,
         marginBottom: theme.spacing.sm,
+        minWidth: '300px',
     },
 
     itemDragging: {

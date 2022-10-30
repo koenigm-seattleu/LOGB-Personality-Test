@@ -26,7 +26,7 @@ export default function ScoreGraph({ data }) {
             <RadarChart
                 captions={captions}
                 data={graphData}
-                size={300}
+                size={340}
                 options={{
                     scales: 4,
                     captionMargin: 20,
