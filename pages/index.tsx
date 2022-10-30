@@ -88,7 +88,7 @@ export default function Home() {
                 category: 'G',
             },
             {
-                description: 'Preditable',
+                description: 'Predictable',
                 category: 'B',
             },
         ],
