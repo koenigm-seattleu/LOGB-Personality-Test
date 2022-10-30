@@ -246,6 +246,14 @@ export default function Home() {
                 >
                     Created by Kevin Chang
                 </a>
+
+                <a
+                    href='http://mrfarshtey.net/Psychology/5minute_personality_test.doc'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    Test originally from mrfarshtey.net
+                </a>
             </footer>
         </div>
     );
