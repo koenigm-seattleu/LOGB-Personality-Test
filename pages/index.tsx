@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
-import DndList from './DndList';
-import Scores from './Scores';
+import DndList from '../components/DndList';
+import Scores from '../components/Scores';
 import FadeIn from 'react-fade-in';
+import Footer from '../components/Footer';
 
 export default function Home() {
     const [scores, setScores] = useState<Array<Array<number>>>([
@@ -224,10 +225,10 @@ export default function Home() {
                 <Head>
                     <title>LOGB Personality Test</title>
                     <meta
-                        name='description'
-                        content='5-minute personality test'
+                        name="description"
+                        content="5-minute personality test"
                     />
-                    <link rel='icon' href='/favicon.ico' />
+                    <link rel="icon" href="/favicon.ico" />
                 </Head>
 
                 <main className={styles.main}>
@@ -249,33 +250,7 @@ export default function Home() {
                 </main>
             </div>
 
-            <div className={styles.footerContainer}>
-                <footer className={styles.footer}>
-                    <div className={styles.footerTitleContainer}>
-                        <h2>LOGB Personality Test</h2>
-                    </div>
-
-                    <div className={styles.footerRightContent}>
-                        <a
-                            href='http://mrfarshtey.net/Psychology/5minute_personality_test.doc'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
-                            Test content from mrfarshtey.net
-                        </a>
-
-                        <br />
-
-                        <a
-                            href='https://github.com/Kevinjchang98/LOGB-Personality-Test'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
-                            Created by Kevin Chang
-                        </a>
-                    </div>
-                </footer>
-            </div>
+            <Footer />
         </>
     );
 }
