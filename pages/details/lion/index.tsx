@@ -62,8 +62,8 @@ export default function Lion() {
                                 Can be insensitive to the feelings of others
                             </li>
                             <li>
-                                May "run over" others who are slower to act or
-                                speak
+                                May &ldquo;run over&rdquo; others who are slower
+                                to act or speak
                             </li>
                             <li>Fears inactivity, relaxation</li>
                             <li>Quickly bored by routine or mechanics</li>

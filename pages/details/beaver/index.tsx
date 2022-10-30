@@ -44,7 +44,8 @@ export default function Beaver() {
                             <li>Perfectionist</li>
                             <li>Overly cautious</li>
                             <li>
-                                Won't make decisions without "all" the facts
+                                Won&apos;t make decisions without
+                                &ldquo;all&rdquo; the facts
                             </li>
                             <li>Too picky</li>
                             <li>Overly sensitive</li>
