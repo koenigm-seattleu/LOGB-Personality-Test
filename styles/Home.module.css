@@ -44,7 +44,6 @@
 .descriptionRightContent {
     align-items: left;
     max-width: calc(70% - 1rem);
-    border: 1px solid red;
 }
 
 .footer {
