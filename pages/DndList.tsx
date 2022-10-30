@@ -9,14 +9,9 @@ const useStyles = createStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         borderRadius: theme.radius.md,
-        border: `1px solid ${
-            theme.colorScheme === 'dark'
-                ? theme.colors.dark[5]
-                : theme.colors.gray[2]
-        }`,
+        border: `1px solid ${theme.colors.gray[2]}`,
         padding: `${theme.spacing.sm}px ${theme.spacing.xl}px`,
-        backgroundColor:
-            theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.white,
+        backgroundColor: theme.white,
         marginBottom: theme.spacing.sm,
     },
 
@@ -36,9 +31,22 @@ interface DndListProps {
         description: string;
         category: string;
     }[];
+    setScores: Function;
+    questionIndex: number;
 }
 
-export default function DndList({ data }: DndListProps) {
+enum personalityScoreIndex {
+    L = 0,
+    O = 1,
+    G = 2,
+    B = 3,
+}
+
+export default function DndList({
+    data,
+    setScores,
+    questionIndex,
+}: DndListProps) {
     const { classes, cx } = useStyles();
     const [state, handlers] = useListState(data);
     const [isBrowser, setIsBrowser] = useState(false);
@@ -49,11 +57,32 @@ export default function DndList({ data }: DndListProps) {
         }
     }, []);
 
+    // const onNext = () => {
+    //     setScores((prev: Array<Array<Number>>) => {
+    //         for (let i = 0; i < state.length; i++) {
+    //             // @ts-ignore
+    //             prev[index][personalityScoreIndex[state[i].category]] += 4 - i;
+    //         }
+    //         return prev;
+    //     });
+    // };
+
+    useEffect(() => {
+        setScores((prev: Array<Array<number>>) => {
+            for (let i = 0; i < state.length; i++) {
+                // @ts-ignore
+                prev[questionIndex][personalityScoreIndex[state[i].category]] =
+                    4 - i;
+            }
+            return prev;
+        });
+    }, [state]);
+
     const items = state.map((item, index) => (
         <Draggable
-            key={item.category}
+            key={item.category + questionIndex}
             index={index}
-            draggableId={item.category}
+            draggableId={item.category + questionIndex}
         >
             {(provided, snapshot) => (
                 <div
@@ -74,27 +103,30 @@ export default function DndList({ data }: DndListProps) {
     ));
 
     return (
-        <DragDropContext
-            onDragEnd={({ destination, source }) =>
-                handlers.reorder({
-                    from: source.index,
-                    to: destination?.index || 0,
-                })
-            }
-        >
-            {isBrowser ? (
-                <Droppable droppableId='dnd-list' direction='vertical'>
-                    {(provided) => (
-                        <div
-                            {...provided.droppableProps}
-                            ref={provided.innerRef}
-                        >
-                            {items}
-                            {provided.placeholder}
-                        </div>
-                    )}
-                </Droppable>
-            ) : null}
-        </DragDropContext>
+        <>
+            <DragDropContext
+                onDragEnd={({ destination, source }) =>
+                    handlers.reorder({
+                        from: source.index,
+                        to: destination?.index || 0,
+                    })
+                }
+            >
+                {isBrowser ? (
+                    <Droppable droppableId='dnd-list' direction='vertical'>
+                        {(provided) => (
+                            <div
+                                {...provided.droppableProps}
+                                ref={provided.innerRef}
+                            >
+                                {items}
+                                {provided.placeholder}
+                            </div>
+                        )}
+                    </Droppable>
+                ) : null}
+            </DragDropContext>
+            {/* <button onClick={onNext}>Next</button> */}
+        </>
     );
 }

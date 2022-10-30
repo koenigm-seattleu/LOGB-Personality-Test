@@ -1,26 +1,73 @@
 import Head from 'next/head';
+import { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 import DndList from './DndList';
 
 export default function Home() {
+    const [scores, setScores] = useState<Array<Array<number>>>([
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+    ]);
+    const [question, setQuestion] = useState<number>(0);
+
     const data = [
-        {
-            description: 'Likes authority',
-            category: 'L',
-        },
-        {
-            description: 'Enthusiastic',
-            category: 'O',
-        },
-        {
-            description: 'Sensitive feelings',
-            category: 'G',
-        },
-        {
-            description: 'Likes instructions',
-            category: 'B',
-        },
+        [
+            {
+                description: 'Likes authority',
+                category: 'L',
+            },
+            {
+                description: 'Enthusiastic',
+                category: 'O',
+            },
+            {
+                description: 'Sensitive feelings',
+                category: 'G',
+            },
+            {
+                description: 'Likes instructions',
+                category: 'B',
+            },
+        ],
+        [
+            {
+                description: 'Takes charge',
+                category: 'L',
+            },
+            {
+                description: 'Enthusiastic',
+                category: 'O',
+            },
+            {
+                description: 'Sensitive feelings',
+                category: 'G',
+            },
+            {
+                description: 'Likes instructions',
+                category: 'B',
+            },
+        ],
     ];
+
+    const onSubmitScores = () => {
+        console.log(scores);
+    };
+
+    const questions = data.map((q: Array<any>, i: number) => {
+        return (
+            <div key={i}>
+                {/* <h2 key={i + 'heading'}>{i}</h2> */}
+                <DndList
+                    key={i}
+                    data={q}
+                    setScores={setScores}
+                    questionIndex={i}
+                />
+                <br />
+            </div>
+        );
+    });
+
     return (
         <div className={styles.container}>
             <Head>
@@ -32,7 +79,27 @@ export default function Home() {
             <main className={styles.main}>
                 <h1 className={styles.title}>LOGB Personality test</h1>
 
-                <DndList data={data} />
+                <div className={styles.dndContainer}>
+                    {/* <DndList data={data[question]} setScores={setScores} /> */}
+                    {questions}
+                </div>
+
+                <button onClick={onSubmitScores}>Check scores</button>
+                <button
+                    onClick={() => {
+                        setQuestion(question + 1);
+                        console.log(question);
+                    }}
+                >
+                    Next
+                </button>
+                <button
+                    onClick={() => {
+                        setQuestion(question - 1);
+                    }}
+                >
+                    Previous
+                </button>
             </main>
 
             {/* <footer className={styles.footer}> */}
