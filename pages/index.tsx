@@ -220,7 +220,7 @@ export default function Home() {
 
     return (
         <>
-            <div className={styles.mainContainer}>
+            <div className={styles.container}>
                 <Head>
                     <title>LOGB Personality Test</title>
                     <meta
