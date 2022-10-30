@@ -219,42 +219,57 @@ export default function Home() {
     });
 
     return (
-        <div className={styles.container}>
-            <Head>
-                <title>LOGB Personality Test</title>
-                <meta name='description' content='5-minute personality test' />
-                <link rel='icon' href='/favicon.ico' />
-            </Head>
+        <>
+            <div className={styles.mainContainer}>
+                <Head>
+                    <title>LOGB Personality Test</title>
+                    <meta
+                        name='description'
+                        content='5-minute personality test'
+                    />
+                    <link rel='icon' href='/favicon.ico' />
+                </Head>
 
-            <main className={styles.main}>
-                <FadeIn className={styles.main} delay={20}>
-                    <h1 className={styles.title}>LOGB Personality test</h1>
+                <main className={styles.main}>
+                    <FadeIn className={styles.main} delay={20}>
+                        <h1 className={styles.title}>LOGB Personality test</h1>
 
-                    <FadeIn delay={100} className={styles.dndContainer}>
-                        {questions}
+                        <FadeIn delay={100} className={styles.dndContainer}>
+                            {questions}
+                        </FadeIn>
+
+                        <Scores scores={scores} />
                     </FadeIn>
+                </main>
+            </div>
 
-                    <Scores scores={scores} />
-                </FadeIn>
-            </main>
+            <div className={styles.footerContainer}>
+                <footer className={styles.footer}>
+                    <div className={styles.footerTitleContainer}>
+                        <h2>LOGB Personality Test</h2>
+                    </div>
 
-            <footer className={styles.footer}>
-                <a
-                    href='https://github.com/Kevinjchang98/LOGB-Personality-Test'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                >
-                    Created by Kevin Chang
-                </a>
+                    <div className={styles.footerRightContent}>
+                        <a
+                            href='http://mrfarshtey.net/Psychology/5minute_personality_test.doc'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            Test content from mrfarshtey.net
+                        </a>
 
-                <a
-                    href='http://mrfarshtey.net/Psychology/5minute_personality_test.doc'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                >
-                    Test originally from mrfarshtey.net
-                </a>
-            </footer>
-        </div>
+                        <br />
+
+                        <a
+                            href='https://github.com/Kevinjchang98/LOGB-Personality-Test'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            Created by Kevin Chang
+                        </a>
+                    </div>
+                </footer>
+            </div>
+        </>
     );
 }
