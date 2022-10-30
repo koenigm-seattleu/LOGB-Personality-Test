@@ -2,13 +2,13 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 import DndList from './DndList';
+import Scores from './Scores';
 
 export default function Home() {
     const [scores, setScores] = useState<Array<Array<number>>>([
         [0, 0, 0, 0],
         [0, 0, 0, 0],
     ]);
-    const [question, setQuestion] = useState<number>(0);
 
     const data = [
         [
@@ -49,10 +49,6 @@ export default function Home() {
         ],
     ];
 
-    const onSubmitScores = () => {
-        console.log(scores);
-    };
-
     const questions = data.map((q: Array<any>, i: number) => {
         return (
             <div key={i}>
@@ -79,27 +75,9 @@ export default function Home() {
             <main className={styles.main}>
                 <h1 className={styles.title}>LOGB Personality test</h1>
 
-                <div className={styles.dndContainer}>
-                    {/* <DndList data={data[question]} setScores={setScores} /> */}
-                    {questions}
-                </div>
+                <div className={styles.dndContainer}>{questions}</div>
 
-                <button onClick={onSubmitScores}>Check scores</button>
-                <button
-                    onClick={() => {
-                        setQuestion(question + 1);
-                        console.log(question);
-                    }}
-                >
-                    Next
-                </button>
-                <button
-                    onClick={() => {
-                        setQuestion(question - 1);
-                    }}
-                >
-                    Previous
-                </button>
+                <Scores scores={scores} />
             </main>
 
             {/* <footer className={styles.footer}> */}
