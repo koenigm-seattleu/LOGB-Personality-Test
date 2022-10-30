@@ -82,7 +82,7 @@
     margin-bottom: auto;
     justify-content: right;
     width: 9rem;
-    margin-right: clamp(10px, 8rem, 12rem);
+    margin-right: clamp(10px, 5rem, 12rem);
 }
 
 .footerRightContent {
