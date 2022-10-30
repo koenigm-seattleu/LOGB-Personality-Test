@@ -80,10 +80,9 @@
 }
 
 .dndContainer {
-    margin: 4rem 0;
+    margin: auto;
     min-width: 400px;
-    max-width: 600px;
-    width: 70%;
+    width: 100%;
     line-height: 1.5;
     font-size: 1.5rem;
 }
