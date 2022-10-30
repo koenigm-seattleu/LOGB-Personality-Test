@@ -1,72 +1,52 @@
 import styles from '../../../styles/Home.module.css';
 
-export default function Lion() {
+export default function Otter() {
     return (
         <div className={styles.container}>
             <main className={styles.description}>
-                <h1 className={styles.title}>Lions</h1>
+                <h1 className={styles.title}>Otters</h1>
                 <p>
-                    Lions are leaders. They are usually the bosses at
-                    work&#8230; or at least they think they are! They are
-                    decisive, bottom line folks who are observers, not watchers
-                    or listeners. They love to solve problems. They are usually
-                    individualists who love to seek new adventures and
-                    opportunities.
-                </p>
-
-                <p>
-                    Lions are very confident and self-reliant. In a group
-                    setting, if no one else instantly takes charge, the Lion
-                    will. Unfortunately, if they don’t learn how to tone down
-                    their aggressiveness, their natural dominating traits can
-                    cause problems with others. Most entrepreneurs are strong
-                    lions, or at least have a lot of lion in them.
+                    Otters are excitable, fun seeking, cheerleader types who
+                    love to talk! They’re great at motivating others and need to
+                    be in an environment where they can talk and have a vote on
+                    major decisions. The otters’ outgoing nature makes them
+                    great networkers — they usually know a lot of people who
+                    know a lot of people. They can be very loving and
+                    encouraging unless under pressure, when they tend to use
+                    their verbal skills to attack. They have a strong desire to
+                    be liked and enjoy being the center of attention. They are
+                    often very attentive to style, clothes, and flash. Otters
+                    are the life of any party; and most people really enjoy
+                    being around them.
                 </p>
 
                 <div className={styles.descriptionColumnsContainer}>
                     <div className={styles.descriptionList}>
                         <h2>Natural strengths</h2>
                         <ul>
-                            <li>Decisive</li>
-                            <li>Goal-oriented</li>
-                            <li>Achievement driven</li>
-                            <li>Gets results</li>
-                            <li>Independent</li>
-                            <li>Risk-taker</li>
-                            <li>Takes charge</li>
-                            <li>Takes initiative</li>
-                            <li>Self-starter</li>
-                            <li>Persistent</li>
-                            <li>Efficient</li>
-                            <li>Competitive</li>
-                            <li>Enjoys challenges, variety, and change</li>
-                            <li>
-                                Driven to complete projects quickly and
-                                effectively
-                            </li>
+                            <li>Enthusiastic</li>
+                            <li>Optimistic</li>
+                            <li>Good communicator</li>
+                            <li>Emotional and passionate</li>
+                            <li>Motivational and inspirational</li>
+                            <li>Outgoing</li>
+                            <li>Personal</li>
+                            <li>Dramatic</li>
+                            <li>Fun-loving</li>
                         </ul>
                     </div>
 
                     <div className={styles.descriptionList}>
                         <h2>Natural Weaknesses</h2>
                         <ul>
-                            <li>Impatient</li>
-                            <li>Bluent</li>
-                            <li>Poor listener</li>
+                            <li>Unrealistic</li>
+                            <li>Not detail-oriented</li>
+                            <li>Disorganized</li>
                             <li>Impulsive</li>
-                            <li>Demanding</li>
-                            <li>
-                                May view projects as more important than people
-                            </li>
-                            <li>
-                                Can be insensitive to the feelings of others
-                            </li>
-                            <li>
-                                May "run over" others who are slower to act or
-                                speak
-                            </li>
-                            <li>Fears inactivity, relaxation</li>
-                            <li>Quickly bored by routine or mechanics</li>
+                            <li>Listens to feelings above logic</li>
+                            <li>Reactive</li>
+                            <li>Can be too talkative</li>
+                            <li>Excitable</li>
                         </ul>
                     </div>
                 </div>
@@ -76,7 +56,7 @@ export default function Lion() {
                         Basic disposition
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Fast-paced, task oriented
+                        Fast-paced, people oriented
                     </p>
                 </div>
 
@@ -85,8 +65,7 @@ export default function Lion() {
                         Motivated by
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Results; challenge, action, power, and credit for
-                        achievement
+                        Recognition and approval of others
                     </p>
                 </div>
 
@@ -95,9 +74,8 @@ export default function Lion() {
                         Time Management
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Lions focus on NOW instead of distant future. They get a
-                        lot more done in a lot less time than their peers. Hate
-                        wasting time; and like to get right to the point.
+                        Otters focus on the future and have a tendency to rush
+                        to the next exciting thing.
                     </p>
                 </div>
 
@@ -106,8 +84,8 @@ export default function Lion() {
                         Communication Style
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Great at initiating communication; not good at listening
-                        (one way communicator)
+                        Enthusiastic and stimulating, often one-way; but can
+                        inspire and motivate others.
                     </p>
                 </div>
 
@@ -116,9 +94,8 @@ export default function Lion() {
                         Decision Making
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Impulsive; makes quick decisions with goal or end result
-                        in mind. Results-focused. Needs very few facts to make a
-                        decision.
+                        Intuitive and fast. Makes lots of “right calls” and lots
+                        of wrong ones.
                     </p>
                 </div>
 
@@ -127,7 +104,8 @@ export default function Lion() {
                         In Pressure or Tense Situations
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        The lion takes command and becomes autocratic.
+                        The otter ATTACKS. Can be more concerned about their
+                        popularity than about achieving tangible results.
                     </p>
                 </div>
 
@@ -136,19 +114,19 @@ export default function Lion() {
                         Greatest Needs
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        The lion needs to see results, experience variety, and
-                        face new challenges. He needs to solve problems and
-                        wants direct answers.
+                        The otter needs social activities and recognition;
+                        activities that are fun, and freedom from details.
                     </p>
                 </div>
 
                 <div className={styles.descriptionColumnsContainer}>
                     <h3 className={styles.descriptionLeftHeader}>
-                        What the Lion Desires
+                        What the Otter Desires
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Freedom, authority, variety, difficult assignments,
-                        opportunity for advancement.
+                        Prestige, friendly relationships, opportunity to help
+                        and motivate others, and opportunities to verbally share
+                        their ideas.
                     </p>
                 </div>
             </main>
