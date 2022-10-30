@@ -50,7 +50,12 @@ export default function Scores({ scores }: ScoresProps) {
             </p>
             <h2>Main animal:</h2>
             <p>{Categories[primaryCategory]}</p>
-            <a href={'details/' + Categories[primaryCategory].toLowerCase()}>
+            <a
+                href={
+                    'details/' +
+                    Categories[primaryCategory].toLowerCase().replace(/\s/g, '')
+                }
+            >
                 More details
             </a>
         </div>
