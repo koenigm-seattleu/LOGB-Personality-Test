@@ -232,7 +232,14 @@ export default function Home() {
 
                 <main className={styles.main}>
                     <FadeIn delay={20}>
-                        <h1 className={styles.title}>LOGB Personality test</h1>
+                        <h1 className={styles.titleCentered}>
+                            LOGB Personality test
+                        </h1>
+                        <p className={styles.mainCaption}>
+                            Drag to reorder cards in each set of four to have
+                            the most relatable card at the top and least
+                            relatable card at the bottom
+                        </p>
                         <div className={styles.dndContainer}>
                             <FadeIn delay={100}>{questions}</FadeIn>
 

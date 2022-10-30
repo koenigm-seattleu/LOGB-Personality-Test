@@ -9,15 +9,21 @@
 }
 
 .description {
-    min-height: 100vh;
     max-width: 700px;
-    padding: 4rem 0;
+    padding: 2rem 0;
     margin: auto;
     flex: 1;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+}
+
+.mainCaption {
+    max-width: 630px;
+    padding: 3rem 0;
+    margin: auto;
+    text-align: justify;
 }
 
 .main {
@@ -106,6 +112,13 @@
     text-decoration: underline;
 }
 
+.titleCentered {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+    text-align: center;
+}
+
 .title {
     margin: 0;
     line-height: 1.15;
@@ -114,7 +127,7 @@
 
 .dndContainer {
     margin: auto;
-    width: clamp(250px, 100%, 600px);
+    width: clamp(250px, 100%, 700px);
     line-height: 1.5;
     font-size: 1.5rem;
 }
