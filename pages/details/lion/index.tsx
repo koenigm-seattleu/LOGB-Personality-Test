@@ -51,7 +51,7 @@ export default function Lion() {
                         <h2>Natural Weaknesses</h2>
                         <ul>
                             <li>Impatient</li>
-                            <li>Bluent</li>
+                            <li>Blunt</li>
                             <li>Poor listener</li>
                             <li>Impulsive</li>
                             <li>Demanding</li>
