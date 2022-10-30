@@ -51,7 +51,7 @@ export default function Home() {
                 category: 'G',
             },
             {
-                description: 'Likes instructions',
+                description: 'Accurate',
                 category: 'B',
             },
         ],
