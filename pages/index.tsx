@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styles from '../styles/Home.module.css';
 import DndList from './DndList';
 import Scores from './Scores';
+import FadeIn from 'react-fade-in';
 
 export default function Home() {
     const [scores, setScores] = useState<Array<Array<number>>>([
@@ -226,11 +227,15 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <h1 className={styles.title}>LOGB Personality test</h1>
+                <FadeIn delay={20}>
+                    <h1 className={styles.title}>LOGB Personality test</h1>
 
-                <div className={styles.dndContainer}>{questions}</div>
+                    <FadeIn delay={100} className={styles.dndContainer}>
+                        {questions}
+                    </FadeIn>
 
-                <Scores scores={scores} />
+                    <Scores scores={scores} />
+                </FadeIn>
             </main>
 
             <footer className={styles.footer}>
