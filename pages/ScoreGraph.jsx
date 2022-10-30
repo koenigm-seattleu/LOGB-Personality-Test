@@ -1,11 +1,7 @@
 import RadarChart from 'react-svg-radar-chart';
 import 'react-svg-radar-chart/build/css/index.css';
 
-interface ScoreGraphProps {
-    data: Array<number>;
-}
-
-export default function ScoreGraph({ data }: ScoreGraphProps) {
+export default function ScoreGraph({ data }) {
     const graphData = [
         {
             data: {
