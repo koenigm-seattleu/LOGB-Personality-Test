@@ -48,9 +48,7 @@ export default function Scores({ scores }: ScoresProps) {
 
             <ScoreGraph data={scoreSum} />
 
-            <h2>Main animal:</h2>
-
-            <p>{Categories[primaryCategory]}</p>
+            <h2 className={styles.subTitle}>{Categories[primaryCategory]}</h2>
 
             <a
                 href={
