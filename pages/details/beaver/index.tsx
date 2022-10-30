@@ -1,72 +1,53 @@
 import styles from '../../../styles/Home.module.css';
 
-export default function Lion() {
+export default function Beaver() {
     return (
         <div className={styles.container}>
             <main className={styles.description}>
-                <h1 className={styles.title}>Lions</h1>
+                <h1 className={styles.title}>Beavers</h1>
                 <p>
-                    Lions are leaders. They are usually the bosses at
-                    work&#8230; or at least they think they are! They are
-                    decisive, bottom line folks who are observers, not watchers
-                    or listeners. They love to solve problems. They are usually
-                    individualists who love to seek new adventures and
-                    opportunities.
-                </p>
-
-                <p>
-                    Lions are very confident and self-reliant. In a group
-                    setting, if no one else instantly takes charge, the Lion
-                    will. Unfortunately, if they don’t learn how to tone down
-                    their aggressiveness, their natural dominating traits can
-                    cause problems with others. Most entrepreneurs are strong
-                    lions, or at least have a lot of lion in them.
+                    Beavers have a strong need to do things right and by the
+                    book. In fact, they are the kind of people who actually read
+                    instruction manuals. They are great at providing quality
+                    control in an office, and will provide quality control in
+                    any situation or field that demands accuracy, such as
+                    accounting, engineering, etc. Because rules, consistency and
+                    high standards are so important to beavers, they are often
+                    frustrated with others who do not share these same
+                    characteristics. Their strong need for maintaining high (and
+                    oftentimes unrealistic) standards can short-circuit their
+                    ability to express warmth in a relationship.
                 </p>
 
                 <div className={styles.descriptionColumnsContainer}>
                     <div className={styles.descriptionList}>
                         <h2>Natural strengths</h2>
                         <ul>
-                            <li>Decisive</li>
-                            <li>Goal-oriented</li>
-                            <li>Achievement driven</li>
-                            <li>Gets results</li>
-                            <li>Independent</li>
-                            <li>Risk-taker</li>
-                            <li>Takes charge</li>
-                            <li>Takes initiative</li>
-                            <li>Self-starter</li>
-                            <li>Persistent</li>
-                            <li>Efficient</li>
-                            <li>Competitive</li>
-                            <li>Enjoys challenges, variety, and change</li>
-                            <li>
-                                Driven to complete projects quickly and
-                                effectively
-                            </li>
+                            <li>Accurate</li>
+                            <li>Analytical</li>
+                            <li>Detail-oriented</li>
+                            <li>Thoroughness</li>
+                            <li>Industrious</li>
+                            <li>Orderly</li>
+                            <li>Methodical and exhaustive</li>
+                            <li>High standards</li>
+                            <li>Intuitive</li>
+                            <li>Controlled</li>
                         </ul>
                     </div>
 
                     <div className={styles.descriptionList}>
                         <h2>Natural Weaknesses</h2>
                         <ul>
-                            <li>Impatient</li>
-                            <li>Bluent</li>
-                            <li>Poor listener</li>
-                            <li>Impulsive</li>
-                            <li>Demanding</li>
+                            <li>Too hard on self</li>
+                            <li>Too critical of others</li>
+                            <li>Perfectionist</li>
+                            <li>Overly cautious</li>
                             <li>
-                                May view projects as more important than people
+                                Won't make decisions without "all" the facts
                             </li>
-                            <li>
-                                Can be insensitive to the feelings of others
-                            </li>
-                            <li>
-                                May "run over" others who are slower to act or
-                                speak
-                            </li>
-                            <li>Fears inactivity, relaxation</li>
-                            <li>Quickly bored by routine or mechanics</li>
+                            <li>Too picky</li>
+                            <li>Overly sensitive</li>
                         </ul>
                     </div>
                 </div>
@@ -76,7 +57,7 @@ export default function Lion() {
                         Basic disposition
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Fast-paced, task oriented
+                        Slow-paced, task-oriented
                     </p>
                 </div>
 
@@ -85,8 +66,7 @@ export default function Lion() {
                         Motivated by
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Results; challenge, action, power, and credit for
-                        achievement
+                        The desire to be right and maintain quality
                     </p>
                 </div>
 
@@ -95,9 +75,8 @@ export default function Lion() {
                         Time Management
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Lions focus on NOW instead of distant future. They get a
-                        lot more done in a lot less time than their peers. Hate
-                        wasting time; and like to get right to the point.
+                        Beavers tend to work slowly to make sure they are
+                        accurate
                     </p>
                 </div>
 
@@ -106,8 +85,8 @@ export default function Lion() {
                         Communication Style
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Great at initiating communication; not good at listening
-                        (one way communicator)
+                        Beavers are good listeners, communicate details, and are
+                        usually diplomatic
                     </p>
                 </div>
 
@@ -116,9 +95,8 @@ export default function Lion() {
                         Decision Making
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Impulsive; makes quick decisions with goal or end result
-                        in mind. Results-focused. Needs very few facts to make a
-                        decision.
+                        Avoids making decisions; needs lots of information
+                        before they will make a decision
                     </p>
                 </div>
 
@@ -127,7 +105,8 @@ export default function Lion() {
                         In Pressure or Tense Situations
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        The lion takes command and becomes autocratic.
+                        The beaver tries to avoid pressure or tense situations.
+                        They can ignore deadlines
                     </p>
                 </div>
 
@@ -136,19 +115,18 @@ export default function Lion() {
                         Greatest Needs
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        The lion needs to see results, experience variety, and
-                        face new challenges. He needs to solve problems and
-                        wants direct answers.
+                        The beaver needs security, gradual change and time to
+                        adjust to it
                     </p>
                 </div>
 
                 <div className={styles.descriptionColumnsContainer}>
                     <h3 className={styles.descriptionLeftHeader}>
-                        What the Lion Desires
+                        What the Beaver Desires
                     </h3>
                     <p className={styles.descriptionRightContent}>
-                        Freedom, authority, variety, difficult assignments,
-                        opportunity for advancement.
+                        Clearly defined tasks, stability, security, low risk,
+                        and tasks that require precision and planning
                     </p>
                 </div>
             </main>
