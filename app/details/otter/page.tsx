@@ -2,7 +2,6 @@
 
 import styles from '../../../styles/Home.module.css';
 import FadeIn from 'react-fade-in';
-import Footer from '../../../components/Footer';
 
 export default function Otter() {
     return (
