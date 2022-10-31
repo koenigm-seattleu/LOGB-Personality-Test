@@ -1,63 +1,61 @@
+'use client';
+
 import styles from '../../../styles/Home.module.css';
 import FadeIn from 'react-fade-in';
-import Footer from '../../../components/Footer';
 
-export default function GoldenRetriever() {
+export default function Beaver() {
     return (
         <>
             <div className={styles.container}>
                 <main className={styles.description}>
                     <FadeIn delay={150}>
-                        <h1 className={styles.title}>Golden Retrievers</h1>
+                        <h1 className={styles.title}>Beavers</h1>
                         <p>
-                            One word describes these people: LOYAL. They’re so
-                            loyal, in fact, that they can absorb the most
-                            emotional pain and punishment in a relationship and
-                            still stay committed. They are great listeners,
-                            incredibly empathetic and warm encouragers. However,
-                            they tend to be such pleasers that they can have
-                            great difficulty being assertive in a situation or
-                            relationship when it’s needed.
+                            Beavers have a strong need to do things right and by
+                            the book. In fact, they are the kind of people who
+                            actually read instruction manuals. They are great at
+                            providing quality control in an office, and will
+                            provide quality control in any situation or field
+                            that demands accuracy, such as accounting,
+                            engineering, etc. Because rules, consistency and
+                            high standards are so important to beavers, they are
+                            often frustrated with others who do not share these
+                            same characteristics. Their strong need for
+                            maintaining high (and oftentimes unrealistic)
+                            standards can short-circuit their ability to express
+                            warmth in a relationship.
                         </p>
 
                         <div className={styles.descriptionColumnsContainer}>
                             <div className={styles.descriptionList}>
                                 <h2>Natural strengths</h2>
                                 <ul>
-                                    <li>Patient</li>
-                                    <li>Easy-going</li>
-                                    <li>Team player</li>
-                                    <li>Stable</li>
-                                    <li>Empathetic</li>
-                                    <li>Compassionate</li>
-                                    <li>Sensitive to feelings of others</li>
-                                    <li>Tremendously loyal</li>
-                                    <li>Puts people above projects</li>
-                                    <li>Dependable</li>
-                                    <li>Reliable</li>
-                                    <li>Supportive</li>
-                                    <li>Agreeable</li>
+                                    <li>Accurate</li>
+                                    <li>Analytical</li>
+                                    <li>Detail-oriented</li>
+                                    <li>Thoroughness</li>
+                                    <li>Industrious</li>
+                                    <li>Orderly</li>
+                                    <li>Methodical and exhaustive</li>
+                                    <li>High standards</li>
+                                    <li>Intuitive</li>
+                                    <li>Controlled</li>
                                 </ul>
                             </div>
 
                             <div className={styles.descriptionList}>
                                 <h2>Natural Weaknesses</h2>
                                 <ul>
-                                    <li>Indecisive</li>
-                                    <li>Over-accommodating</li>
+                                    <li>Too hard on self</li>
+                                    <li>Too critical of others</li>
+                                    <li>Perfectionist</li>
+                                    <li>Overly cautious</li>
                                     <li>
-                                        May sacrifice results for the sake of
-                                        harmony
+                                        Won&apos;t make decisions without
+                                        &ldquo;all&rdquo; the facts
                                     </li>
-                                    <li>Slow to initiate</li>
-                                    <li>
-                                        Avoids confrontation even when needed
-                                    </li>
-                                    <li>
-                                        Tends to hold grudges and remember hurts
-                                        inflicted by others
-                                    </li>
-                                    <li>Fears change</li>
+                                    <li>Too picky</li>
+                                    <li>Overly sensitive</li>
                                 </ul>
                             </div>
                         </div>
@@ -67,7 +65,7 @@ export default function GoldenRetriever() {
                                 Basic disposition
                             </h3>
                             <p className={styles.descriptionRightContent}>
-                                Slow-paced, people-oriented
+                                Slow-paced, task-oriented
                             </p>
                         </div>
 
@@ -76,8 +74,7 @@ export default function GoldenRetriever() {
                                 Motivated by
                             </h3>
                             <p className={styles.descriptionRightContent}>
-                                Desire for good relationships and appreciation
-                                of others
+                                The desire to be right and maintain quality
                             </p>
                         </div>
 
@@ -86,9 +83,8 @@ export default function GoldenRetriever() {
                                 Time Management
                             </h3>
                             <p className={styles.descriptionRightContent}>
-                                Golden Retrievers focus on the present and
-                                devote lots of time to helping others and
-                                building relationships
+                                Beavers tend to work slowly to make sure they
+                                are accurate
                             </p>
                         </div>
 
@@ -97,8 +93,8 @@ export default function GoldenRetriever() {
                                 Communication Style
                             </h3>
                             <p className={styles.descriptionRightContent}>
-                                Two-way communicator; great listener and
-                                provides empathetic response
+                                Beavers are good listeners, communicate details,
+                                and are usually diplomatic
                             </p>
                         </div>
 
@@ -107,8 +103,8 @@ export default function GoldenRetriever() {
                                 Decision Making
                             </h3>
                             <p className={styles.descriptionRightContent}>
-                                Makes decisions more slowly, wants input from
-                                others, and often yields to the input
+                                Avoids making decisions; needs lots of
+                                information before they will make a decision
                             </p>
                         </div>
 
@@ -117,8 +113,8 @@ export default function GoldenRetriever() {
                                 In Pressure or Tense Situations
                             </h3>
                             <p className={styles.descriptionRightContent}>
-                                The Golden Retriever gives in to the opinions,
-                                ideas, and wishes of others. Often too tolerant
+                                The beaver tries to avoid pressure or tense
+                                situations. They can ignore deadlines
                             </p>
                         </div>
 
@@ -127,27 +123,24 @@ export default function GoldenRetriever() {
                                 Greatest Needs
                             </h3>
                             <p className={styles.descriptionRightContent}>
-                                The Golden Retriever needs security; gradual
-                                change and time to adjust to it; an environment
-                                free of conflict
+                                The beaver needs security, gradual change and
+                                time to adjust to it
                             </p>
                         </div>
 
                         <div className={styles.descriptionColumnsContainer}>
                             <h3 className={styles.descriptionLeftHeader}>
-                                What the Golden Retriever Desires
+                                What the Beaver Desires
                             </h3>
                             <p className={styles.descriptionRightContent}>
-                                Quality relationships; security; consistent
-                                known environment; a relaxed and friendly
-                                environment; freedom to work at own pace
+                                Clearly defined tasks, stability, security, low
+                                risk, and tasks that require precision and
+                                planning
                             </p>
                         </div>
                     </FadeIn>
                 </main>
             </div>
-
-            <Footer />
         </>
     );
 }

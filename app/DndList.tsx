@@ -1,3 +1,5 @@
+'use client';
+
 import { createStyles, Text } from '@mantine/core';
 import { useListState } from '@mantine/hooks';
 import { useEffect, useState } from 'react';
@@ -118,7 +120,7 @@ export default function DndList({
                 }
             >
                 {isBrowser ? (
-                    <Droppable droppableId='dnd-list' direction='vertical'>
+                    <Droppable droppableId="dnd-list" direction="vertical">
                         {(provided) => (
                             <div
                                 {...provided.droppableProps}

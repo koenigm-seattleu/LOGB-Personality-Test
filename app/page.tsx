@@ -1,10 +1,11 @@
+'use client';
+
 import Head from 'next/head';
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
-import DndList from '../components/DndList';
-import Scores from '../components/Scores';
+import DndList from './DndList';
+import Scores from './Scores';
 import FadeIn from 'react-fade-in';
-import Footer from '../components/Footer';
 
 export default function Home() {
     const [scores, setScores] = useState<Array<Array<number>>>([
@@ -249,8 +250,6 @@ export default function Home() {
                     </FadeIn>
                 </main>
             </div>
-
-            <Footer />
         </>
     );
 }

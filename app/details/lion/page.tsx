@@ -1,6 +1,7 @@
+'use client';
+
 import styles from '../../../styles/Home.module.css';
 import FadeIn from 'react-fade-in';
-import Footer from '../../../components/Footer';
 
 export default function Lion() {
     return (
@@ -166,8 +167,6 @@ export default function Lion() {
                     </FadeIn>
                 </main>
             </div>
-
-            <Footer />
         </>
     );
 }

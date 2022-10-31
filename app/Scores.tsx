@@ -1,6 +1,8 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
-import ScoreGraph from './ScoreGraph';
+import ScoreGraph from '../app/ScoreGraph';
 
 interface ScoresProps {
     scores: Array<Array<number>>;
