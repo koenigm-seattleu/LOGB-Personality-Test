@@ -142,8 +142,6 @@ export default function Beaver() {
                     </FadeIn>
                 </main>
             </div>
-
-            <Footer />
         </>
     );
 }

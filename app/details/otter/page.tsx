@@ -141,8 +141,6 @@ export default function Otter() {
                     </FadeIn>
                 </main>
             </div>
-
-            <Footer />
         </>
     );
 }

@@ -168,8 +168,6 @@ export default function Lion() {
                     </FadeIn>
                 </main>
             </div>
-
-            <Footer />
         </>
     );
 }

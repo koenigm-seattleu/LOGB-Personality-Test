@@ -251,8 +251,6 @@ export default function Home() {
                     </FadeIn>
                 </main>
             </div>
-
-            <Footer />
         </>
     );
 }

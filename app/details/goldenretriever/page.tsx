@@ -148,8 +148,6 @@ export default function GoldenRetriever() {
                     </FadeIn>
                 </main>
             </div>
-
-            <Footer />
         </>
     );
 }
