@@ -2,6 +2,7 @@
 
 import RadarChart from 'react-svg-radar-chart';
 import 'react-svg-radar-chart/build/css/index.css';
+import styles from './ScoreGraph.module.css';
 
 export default function ScoreGraph({ data }) {
     if (data) {
@@ -25,21 +26,23 @@ export default function ScoreGraph({ data }) {
             beaver: 'B ' + data[3],
         };
         return (
-            <RadarChart
-                captions={captions}
-                data={graphData}
-                size={340}
-                options={{
-                    scales: 4,
-                    captionMargin: 20,
+            <div className={styles.chartContainer}>
+                <RadarChart
+                    captions={captions}
+                    data={graphData}
+                    size={340}
+                    options={{
+                        scales: 4,
+                        captionMargin: 20,
 
-                    captionProps: () => ({
-                        className: 'caption',
-                        textAnchor: 'middle',
-                        fontSize: 16,
-                    }),
-                }}
-            />
+                        captionProps: () => ({
+                            className: 'caption',
+                            textAnchor: 'middle',
+                            fontSize: 16,
+                        }),
+                    }}
+                />
+            </div>
         );
     } else {
         return null;
